@@ -1,7 +1,8 @@
 #!/bin/bash
 
-apt install iw
-iw reg set NL
+sudo apt install -y wireless-tools
+sudo apt install-y iw
+sudo iw reg set NL
 sudo systemctl mask wpa_supplicant.service
 sudo mv /sbin/wpa_supplicant /sbin/no_wpa_supplicant
 sudo pkill wpa_supplicant
