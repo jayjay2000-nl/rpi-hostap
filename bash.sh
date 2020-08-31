@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt update
 sudo apt install -y wireless-tools
 sudo apt install -y iw
 sudo iw reg set NL
